@@ -1,0 +1,116 @@
+body{
+    font-family: comissioner;
+    height: 100vh;
+    background: url(paisagem.jpg) no-repeat center;
+    background-size:cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadro{
+    width: 465px;
+    text-align: center;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.informações{
+    background-color: rgba(228, 239, 255, 0.212);
+    padding: 70px 35px;
+}
+
+.logotipo1{
+    display: inline-block;
+    padding: 20px;
+    border: 2px solid black;
+    background: linear-gradient(195deg, rgba(0, 128, 0, 0.575), rgba(255, 238, 0, 0.384));
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+/*https://developer.mozilla.org/pt-BR/docs/Web/CSS/@keyframes*/
+
+@keyframes animated-gradient{
+    70%{
+        background-position: right top;
+    }
+    90%{
+        background-position: left top;
+    }
+    30%{
+        background-position: right bottom;
+    }
+    60%{
+        background-position: left bottom;
+    }
+}
+
+.logotipo1 img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+}
+
+.nome{
+    font-size: 30px;
+}
+
+.borda{
+    width: 1px;
+    height: 30px;
+    background: rgba(36, 34, 34, 0.527);
+}
+
+.descrição{
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.911);
+    display: flex;
+    align-items: center;
+}
+
+.subdesc{
+    flex: 1;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.links a{
+    color: #f2f2f2;
+    width: 56px;
+    font-size: 1.8rem;
+    transition: .4s linear;
+}
+
+.links a:hover{
+    color: black;
+}
+
+.botão{
+    display: inline-block;
+    padding: 15px 35px;
+    color: white;
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    transition: .4s linear;
+}
+
+.botão:hover{
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+.nemail{
+    font-family: Arial;
+    font-size: 22px;
+}
